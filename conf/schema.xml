@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://javasoze.github.com/sensei/schema/sensei-schema.xsd">
+
+  <table uid="id">
+	<!--  column name="place" type="string" />
+	<column name="lat" type="double" />
+	<column name="lon" type="double"/ -->
+	<column name="population" type="long"/>
+	<column name="contents" type="text" index="ANALYZED" store="NO" termvector="NO" />
+  </table>
+  
+  <facets>
+    <facet name="population" type="simple" />
+   </facets>
+  
+</schema>
